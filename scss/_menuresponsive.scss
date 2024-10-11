@@ -1,0 +1,21 @@
+/* Hacer que el menú de navegación sea responsive */
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    width: auto;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-azul-oscuro;
+}

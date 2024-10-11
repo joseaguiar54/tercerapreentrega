@@ -1,0 +1,69 @@
+@mixin anclar {
+    text-decoration: none;
+}
+
+@mixin anclar2 {
+    text-align: center;
+}
+
+/* Clases */
+
+.btnformulario {
+    background-color: $color-azul-oscuro;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: $color-blanco;
+}
+
+.button {
+    @include anclar2;
+    color: $color-blanco;
+    border-radius: 5px;
+    background-color: $color-azul-claro;
+}
+
+.img {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    @include anclar2;
+    margin: 20px 0;
+}
+
+
+/* Estilos generales de los botones */
+.button {
+    padding: 10px 20px;
+    background-color: $color-azul-claro;
+    color: $color-blanco;
+    @include anclar2;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    @include anclar;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Asegurar que los enlaces dentro del botón tengan color y estilo correcto */
+.button a {
+    color: $color-blanco;
+    @include anclar;
+}
+
+/* Contenedor de los botones */
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

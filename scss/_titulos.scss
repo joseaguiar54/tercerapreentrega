@@ -1,0 +1,36 @@
+@mixin fuenteyalineacion {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* Títulos h1, h2, h3, h4, h5, h6 */
+h1 {
+    @include fuenteyalineacion;
+    font-size: 42px;
+    color: $color-azul-oscuro;
+}
+
+h2 {
+    @include fuenteyalineacion;
+    font-size: 32px;
+    color: $color-azul-claro;
+}
+
+h3 {
+    @include fuenteyalineacion;
+    font-size: 32px;
+    color: $color-azul-oscuro;
+}
+
+h4,
+h5 {
+    @include fuenteyalineacion;
+    font-size: 32px;
+    color: $color-azul-claro;
+}
+
+h6 {
+    @include fuenteyalineacion;
+    font-size: 32px;
+    color: $color-azul-oscuro;
+}

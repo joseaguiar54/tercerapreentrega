@@ -1,0 +1,75 @@
+/* Ajustes en los botones */
+
+/* Para pantallas pequeñas: apilar los botones */
+@media (max-width: 768px) {
+    .contenedor-botones {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Para dispositivos pequeños: tablets y teléfonos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+        height: auto;
+    }
+
+    main {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Ajustes en márgenes y paddings en dispositivos pequeños */
+@media (max-width: 768px) {
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Centrar una imagen específica en vista para pc */
+@media (min-width: 992px) {
+    #imagen-centrada {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

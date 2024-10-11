@@ -1,0 +1,27 @@
+@mixin display {
+    display: block;
+}
+
+/* Formulario */
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    @include display;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: $color-negro;
+}
+
+input[type="text"],
+textarea {
+    @include display;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 2px solid $color-azul-oscuro;
+}

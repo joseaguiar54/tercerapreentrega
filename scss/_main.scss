@@ -1,0 +1,17 @@
+@mixin fuente {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Main: tronco de la página */
+
+main {
+    margin: 50px;
+    padding: 50px;
+    @include fuente;
+}
+
+p {
+    @include fuente;
+    font-size: 14px;
+}
